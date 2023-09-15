@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+
+    <link href="boot.css" rel="stylesheet" >
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+     crossorigin="anonymous">
+   </script>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" 
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" 
+    crossorigin="anonymous">
+   </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Web Content</h1>
+        <ul class="lead">
+            <li><a href="#History">History of JavaScript</a></li>
+            <li><a href="#difference">Differences between Java and JavaScript</a></li>
+            <li><a href="#reserved">10 reserved keywords in JavaScript and what they do</a></li>
+            <li><a href="#con">Comparison of 'var','let' and 'const'</a></li>
+        </ul>
+    </div>
+    
+
+    <div id="History" class="container">
+        <h1>History of Javascript</h1>
+        <p>
+            Javascript, often abbreviated as JS, is a popular programming language primarily used for web development
+            JavaScript was invented by Brendan Eich in 1995. 
+            It has evolved significantly since its inception.
+        </p>
+        <p>
+            Here's a brief history of Javascript from ES1 to ES6:
+        </p>
+        <ol>
+            <li><h4>ECMAScript 1(ES1-1997):</h4></li>
+            <ul>
+                <li>Javascript was first introduced by Netscape Communications as LiveScript.</li>
+                <li>It was later renamed Javascript when  Netscape partnered with Sun Microsystems.</li>
+                <li>ES1 was the initial standardized version by ECMA international</li>
+            </ul><br>
+
+            <li><h4>ECMAScript 2(ES2-1998):</h4></li>
+            <ul>
+                <li>ES2 brought minor enhancements and bug fixes to the language.</li>
+            </ul><br>
+
+            <li><h4>ECMAScript 3(ES3-1999):</h4></li>
+            <ul>
+                <li>ES3 was a significant update, widely supported by browers for many years.</li>
+                <li>It introduced features like regular expressions and exception handling.</li>
+            </ul><br>
+
+            <li><h4>ECMAScript 4(ES4-Abandoned):</h4></li>
+            <ul>
+                <li>ES4 was an ambitious but utimately abandoned proposal due to disagreements within the industry.</li>
+            </ul><br>
+
+            <li><h4>ECMAScript 5(ES5-2009):</h4></li>
+            <ul>
+                <li>ES5 brought substantial improvements and became widely adopted.</li>
+                <li>It introduced strict mode, JSON support, and many other enhancements</li>
+            </ul><br>
+
+            <li><h4>ECMAScript 6(ES6,also known as ECMAScript 2015-2015):</h4></li>
+            <ul>
+                <li>
+                    ES6 was a major milestone, introducing many new features like arrow fuctions, classes, template
+                    literals, and more.
+                </li>
+                <li>It aimed to make Javascript more expressive and efficient.</li>
+            </ul><br>
+        </ol>
+
+        <p>
+           These Early versions laid the foundation for Javascript's widespread use in web development. After ES6, the
+           ECMAScript specification transitioned to a yearly release cycle, bringing regular updates and improvements
+           to the language. Subsequent versions, such as ES7(2016). ES8 (2017), and so on, introduced new features and
+           enhancements to Javascript.
+        </p>
+        <p>
+           The evolution of Javascript continues, with ESNext(also known as ESNext or ESNext+1) referring to the next
+           upcoming version, which includes proposals and features that are being developed and considered for inclusion
+           in the language. 
+        </p>
+        <p>
+            Javascript has become a versatile and powerful language, not only for web development but also for server-side 
+            development(Node.js), mobile app development(React Native), and more, making it a crucial part of modern software
+            development.
+        </p>
+    </div>
+    <hr>
+
+    <div id="difference" class="container">
+       <h2>Differences between Java and JavaScript</h2>
+       <p>
+         Java and JavaScript are two distinct programming languages that share a similar name but have different
+         purposes, syntax, and use cases. Here's a brief different between Java and JavaScript:
+       </p>
+       <ol>
+         <li><b>Purpose:</b></li>
+            <ul>
+                <li>
+                    Java: Java is a general-purpose, high-level programming language used for developing a wide range of
+                    applications, including desktop software, web applications,mobile apps(Andriod), and server-side
+                    applications 
+                </li>
+
+                <li>
+                    JavaScript: JavaScript is primarily a scripting language used for front-end web development.
+                    it's executed in web browsers and is mainly used for creating interactive and dynamic web pages.
+                </li>
+            </ul>
+
+
+           <li><b>Platform:</b></li>
+           <ul>
+               <li>
+                   Java: Java is platform-independent and can be run on various platforms using the Java Virtual machine
+                   (JVM).
+               </li>
+
+               <li>
+                   JavaScript: JavaScript is primarily used in web browsers and runs within the brower's JavaScript
+                   engine.
+               </li>
+           </ul>
+
+    
+            <li><b>Syntax:</b></li>
+            <ul>
+                <li>
+                    Java: Java has a C-style syntax and uses a statically-typed system where variable types
+                    must be declared before use.
+                </li>
+
+                <li>
+                    JavaScript: JavaScript has a C-style syntax similar to java, but it uses a dynamically-typed system
+                    where variable types are determined at runtime.
+                </li>
+            </ul>
+    
+
+    
+            <li><b>Typing:</b></li>
+            <ul>
+                <li>
+                    Java: Java has a statically-typed language, which means variable types are explicitly declared and
+                    checked at compile-time.
+                </li>
+
+                <li>
+                    JavaScript: JavaScript is dynamically-typed,allowing variables to change types during runtime
+                    without explicit type declaration.
+                </li>
+            </ul>
+
+            <li><b>Usage:</b></li>
+            <ul>
+                <li>
+                    Java: Java is used for a wide range of applications, including enterprise software,Android app
+                    development, server-side development(Java EE), and more.
+                </li>
+
+                <li>
+                    JavaScript: JavaScript is primarily used for front-end web development to enhance the interactivity
+                    and functionality of web pages. It's also used on the server-side(Node.js) and in various other
+                    contexts
+                </li>
+            </ul>
+
+            <li><b>Compilation:</b></li>
+            <ul>
+                <li>
+                    Java: Java <source> code is compiled into bytecode,which is then executed by the JVM.
+                </li>
+
+                <li>
+                    JavaScript: JavaScript source code is typically interpreted by the browser's JavaScript engine.
+                </li>
+            </ul>
+
+            <li><b>Runtime Environment:</b></li>
+            <ul>
+                <li>
+                    Java: Java appliction run in a standalone java runtime environment or within web browsers using
+                    Java applets(though applets are now mostly deprecated).
+                </li>
+
+                <li>
+                    JavaScript: JavaScript runs in web browsers and can also run on the server-side using Node.js.
+                </li>
+            </ul>
+
+            <li><b>Concurrency:</b></li>
+            <ul>
+                <li>
+                    Java: Java has built-in support for multi-threading and concurrent programming.
+                </li>
+
+                <li>
+                    JavaScript: JavaScript is single-thraeded in the browser but can utilize asynchronous programming
+                    techniques to manage Concurrency
+                </li>
+            </ul>
+        </ol>
+        <p>
+            In summary, Java and JavaScript are distinct language with different purposes and use cases. Java is a
+            general-purpose langugae used for a wide range of appplications, whike JavaScript is primarily used for
+            enhancing web pages and web appplications with client-side interactivity.
+        </p>
+    </div>
+    <hr>
+
+    <div id="reserved" class="container">
+       <h2>10 reserved keywords in JavaScript  and what they do</h2>
+       <p>
+        JavaScript has several reserved keywords that have special meanings within the language.<br>
+        Here are 10 commonly used reserved keywords in JavaScript and a brief description of what they do:
+       </p>
+       <ol>
+         <li><b>var:</b></li>
+          <ul>
+            <li>Used to declare variables in JavaScript.Variable declared with <b>'var'</b> are function-scoped</li>
+          </ul>
+
+          <li><b>let:</b></li>
+          <ul>
+            <li>
+                Introduced in ES6, <b>'let'</b> is used to declare block-scoped variables. It allows for better
+                scoping control than <b>'var'</b>.
+            </li>
+          </ul>
+
+          <li><b>const:</b></li>
+          <ul>
+            <li>
+                Also introduced in ES6,'const' is used to declare constants. variables declared with 'const'
+                cannot be reassigned after they are initialized.
+            </li>
+          </ul>
+
+          <li><b>function:</b></li>
+          <ul>
+            <li>
+                Used to declare a function. Functions are blocks of reusable code that can 
+                be invoked with or without parameter
+            </li>
+          </ul>
+
+          <li><b>If:</b></li>
+          <ul>
+            <li>
+                Used to conditionally execute code  based on a specified condition. It's part of control flow statements.
+            </li>
+          </ul>
+
+          <li><b>else:</b></li>
+          <ul>
+            <li>
+                Used in conjuction with <b>'if'</b> to specify code that should execute when the condition
+                in the <b>'if' statement is false.</b>
+            </li>
+          </ul>
+
+          <li><b>for:</b></li>
+          <ul>
+            <li>
+                Used to create loops. The <b>'for'</b> statement includes initialization, condition, and  iteration
+                expressions to control the loop's behaviour.
+            </li>
+          </ul>
+
+          <li><b>while:</b></li>
+          <ul>
+            <li>
+                Another loop statement used to repeatedly exeute a block of code as long as a specified condition
+                is true.
+            </li>
+          </ul>
+
+          <li><b>switch:</b></li>
+          <ul>
+            <li>
+                Used for conditional branching. It allows you to execute different blocks of code based on the value
+                of an expression.
+            </li>
+          </ul>
+
+          <li><b>return:</b></li>
+          <ul>
+            <li>
+                Used within functions to specify the value to be returned  from the function. It also terminates
+                the fuction's execution.
+            </li>
+          </ul>
+       </ol>
+       <p>
+         These keywords are fundamental to JavaScript and are used in various combinations to create complex programs.
+         Understanding how they work is crucial for writing effective JavaScript code.
+       </p>
+    </div>
+    <hr>
+
+    <div id="con" class="container">
+       <h2>Comparison of <b>'var'</b>,<b>'let'</b> and <b>'const'</b></h2>
+       <table border="1"  height="200" width="80%" cellpadding="15">
+            <tr>
+                <th>Characteristics</th>
+                <th>'var'</th>
+                <th>'let'</th>
+                <th>'const'</th>
+            </tr>
+
+            <tr>
+                <td>Scope</td>
+                <td>Function-scoped</td>
+                <td>Block-scoped</td>
+                <td>Block-scoped</td>
+            </tr>
+
+            <tr>
+                <td>Reassignment</td>
+                <td>Can be reassigned</td>
+                <td>Can be reassigned</td>
+                <td>Cannot be reassigned</td>
+            </tr>
+
+            <tr>
+                <td>Declaration Hoisting</td>
+                <td>Hoisted to the top of scope</td>
+                <td>Hoisted to the top of scope</td>
+                <td>Hoisted to the top of scope</td>
+            </tr>
+
+            <tr>
+                <td>Temporal Dead Zone</td>
+                <td>No temporal dead zone</td>
+                <td>Temporal dead zone</td>
+                <td>Temporal dead zone</td>
+            </tr>
+
+            <tr>
+                <td>Initialization</td>
+                <td>Can be declared without initialization</td>
+                <td>Can be declared without initialization</td>
+                <td>Must be initialized when declared</td>
+            </tr>
+
+            <tr>
+                <td>Reddefinition</td>
+                <td>Allowed</td>
+                <td>Allowed</td>
+                <td>Not allowed</td>
+            </tr>
+        </table><br>
+        
+        <ul>
+            <li><b>Scope:</b></li>
+            <ul>
+                <li>
+                    <b>'var'</b> is function-scoped,which means it's accessible 
+                    throughout the entire funtion where it's declared
+                </li>
+
+                <li>
+                    Both <b>'let'</b> and <b>'const'</b> are block-scoped, which means they are limited to the
+                    block(enclosed by '{}') where they are defined.  
+                </li>
+            </ul>
+
+            <li><b>Reassignment:</b></li>
+            <ul>
+                <li>
+                    All three can be reassigned. You can change the value of a variable declared 
+                    with <b>'var'</b>, <b>'let'</b>, or <b>'const'</b>. 
+                </li>
+            </ul>
+
+            <li><b>Declaration Hoisting:</b></li>
+            <ul>
+                <li>
+                    All three are hoisted to the top of their containing function or block.This means you can use a
+                    variable before it's declared, but it will have an initial value of <b>'undefined'</b>. 
+                </li>
+            </ul>
+
+            <li><b>Temporal Dead Zone(TDZ):</b></li>
+            <ul>
+                <li>
+                    <b>'var'</b> has no temporal dead zone.It can be used before declaration.
+                </li>
+
+                <li>
+                    Both <b>'let'</b> and <b>'const'</b> have a temporal dead zone, which means you can't access
+                    them before they are declared in the current-block.  
+                </li>
+            </ul>
+
+            <li><b>Initialization:</b></li>
+            <ul>
+                <li>
+                    <b>'var'</b> and <b>'let'</b> can be declared without initializing them with a value. They will
+                    have an initial value of <b>'undefined'</b>
+                </li>
+
+                <li>
+                    <b>'const'</b> must be initialized with a value when declared. It cannot be declared without
+                    an initial value  
+                </li>
+            </ul>
+
+            <li><b>Redefinition:</b></li>
+            <ul>
+                <li>
+                    <b>'var'</b> and <b>'let'</b> allow you to declare variables with the same name multiple times
+                    within the same scope, effectively redefining them,
+                </li>
+
+                <li>
+                    <b>'const'</b> does not allow redeclaration of the same variable name within the same scope
+                </li>
+            </ul>
+        </ul>
+
+        <p>
+            In summary, <b>'let'</b> and <b>'const'</b> are recommended over <b>'var'</b> for modern JavaScript
+            development due to their block-scoping and the prevention of certain common programmin errors, <b>'const'</b>
+            should be used when the variable's value should not change after initialization, while <b>'let'</b> should
+            be used when variable reassignment are needed.
+        </p>
+    </div>
+
+    
+</body>
+</html>
