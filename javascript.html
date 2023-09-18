@@ -3,25 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>javascript</title>
-    
-    <script src="javascript.js">
+    <title>Javascript</title>
+    <style>
+        body{background-color:white;}
+        #ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+       }
 
+      #li{
+        margin-left: 10px;
+      }
+
+     #link{
+         color:yellow
+        
+        }
+    </style>
+
+    <link href="boot.css" rel="stylesheet" >
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+    crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" 
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" 
+    crossorigin="anonymous">
     </script>
 </head>
-<body style="background-color: green;">
-    <button onclick="james()">Greet</button>
-    
-    <h1 id="demo" style="color:gold">Welcome to CSS class</h1>
+<body id="make">
+    <div id="me" style="background-color: green;padding-top: 20px;padding-bottom: 20px;width:100%;position:fixed;">
+        <ul class="list-unstyled" id="ul">
+         <li id="li"><a href=index.html id="link">Assignment 1</a></li>
+         <li id="li"><a href=javascript.html id="link">Assignment 2</a></li>
+        </ul>
+     </div><br><br><br><br>
 
-    <button onclick="jam()">Click to change</button>
+    <button onclick="change()" style="background-color: blue;"> Click to change color</button>
 
-   
-    <button onclick="cal()">answer</button><br><br>
+    <h1>Welcome to Javascript class</h1>
 
-    <button onclick="tai()">click</button><br><br>
+    <script>
+       function change(){
+            document.getElementById('make').style='background-color:green; color:yellow;'
+            document.getElementById('me').style='background-color:black;padding-top: 20px;padding-bottom: 20px;width:100%;position:fixed;'
+        }
+     let a = new Date().getDay();
+     let b = ['Sunday', 'Monday', 'Tuesday','Wednesday','Thursday','Friday','Saturday']
+     let c = b[a]
+     alert(`Today is ${c}`)
 
-    <button onclick="man()">Close</button>
-    
+     const me = {
+        name:'David',
+        age: 19,
+        city:'Ibadan',
+        tribe:'Yoruba',
+        sport:'Basketball',
+        country:'Nigeria'
+     }
+     alert(`My name is ${me.name}. I am ${me.age} years old living in ${me.city}. I am a ${me.tribe} boy. 
+           My favourite sport is ${me.sport}. I am a citizen of ${me.country}.`)
+    </script>
 </body>
 </html>
