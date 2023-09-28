@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        body{background-color:white;}
+        #ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+       }
+
+      #li{
+        margin-left: 10px;
+      }
+
+     #link{
+         color:yellow
+        
+        }
+    </style>
+
+    <link href="boot.css" rel="stylesheet" >
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+    crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" 
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" 
+    crossorigin="anonymous">
+    </script>
+</head>
+<body>
+
+
+    <h1>Welcome to Javascript class</h1>
+    <input id="first"><br><br>
+    <input id="second"><br>
+    <h3 id="an">answer</h3><br>
+    <button onclick="got()">Calculate</button>
+
+    <script>
+        
+        /*let cities = ['Ibadan']
+        alert(typeof cities)
+
+        let table = {
+            material:'plastic',
+            color:'blue'
+        }
+        alert(typeof table)
+
+       let a = 5%3
+       let b = 2*2
+       alert(a==b)
+
+       k = prompt('what is 2+2');
+       let j = 4;
+       alert(j==k)
+       alert(j===k)
+
+       let age = prompt('How old are you?');
+       let gender = prompt('what is your gender?');
+        if(age < 18){
+            alert(`take water`)
+        }
+        else if(age>=18 && gender=='female'){
+            alert('you can take coke')
+        }
+        else if (age>=18 && gender=='male'){
+            alert('you can take beer')
+        }
+        else {
+            alert('you are not invited')
+        }*/
+        
+        /*!
+        !=
+        !==
+        */
+      
+        /*let age = prompt('What is your age');
+        let beverage = (age >=22)?'beer':'water';
+        alert(beverage)*/
+         
+        //Function
+        //Function Declaration
+        /*function get(){
+            let x = prompt('how old are you?')
+            let ifeage = x;
+            let rookeebage = x;
+            alert(ifeage + rookeebage)
+        }
+        
+        let day = new Date().getDay();
+        if (day==1){
+            get();
+        }*/
+
+        /*let name = prompt('2+6 is ?')
+
+        function david(){
+            if(name == 5){
+                alert('you are close')
+            }
+            else if(name==8){
+                alert('correct')
+            }
+            else{
+                alert('wrong')
+            }
+        }
+        david();*/
+
+        
+
+        function got(){
+            var input1 = document.getElementById('first').value;
+            var input2 = document.getElementById('second').value;
+            var answer = input1 * input2;
+            document.getElementById('an').innerHTML= answer;
+        }
+
+        //function parameter
+        /*function me(x,y){
+           return x+y;
+        }
+        alert(me(3,4))*/
+
+        /*function me(birthyear){
+           return new Date().getFullYear() - birthyear
+        }
+        let x = prompt('Which year were you born')
+        alert(me(x))*/
+
+        /*function checkage(age){
+            if(age>=18){
+                return true
+            }
+            else{
+                return confirm('do you have your parent permission?');
+            }
+        }
+        let x=prompt('how old are you');
+        if(checkage(x)){
+            alert('access granted')
+        }
+        else{
+            alert('access denied')
+        }*/
+
+        /*let time = new Date().getHours()
+        if (time == 5){
+            alert('It is time for Fajr prayer, let go to mosque to pray')
+        }
+        else if (time == 12){
+            alert('It is time for  Dhuhr prayer, let go to mosque to pray')
+        }
+        else if (time == 16){
+            alert('It is time for  Asr prayer, let go to mosque to pray')
+        }
+        else if (time ==18){
+            alert('It is time for Maghrib prayer, let go to mosque to pray')
+        }
+        else if (time==20){
+            alert('It is time for Isha prayer, let got to mosque to pray')
+        }*/
+
+        // let yearofretirement=(birthyear,name,retirmentage)=>{
+        //     const age = new Date().getFullYear()-birthyear;
+        //     const yearleft = retirmentage-age;
+        //     return `${name},you have ${yearleft}(s) until retirment`
+        // }
+        
+        // const  fruitPieces= function(fruit){
+        //     return fruitPieces*4;
+        // }
+
+        // function fruitprocessor(apples,oranges){
+        //     const applepiece = fruitPieces(apples);
+        //     const orangepiece = fruitPieces(oranges);
+
+        //     return `this drink is produced by ${applepiece} of apples and ${orangepiece} of oranges`
+        // }
+        // alert(fruitprocessor(3,4));
+
+ 
+        
+    </script>
+</body>
+</html>

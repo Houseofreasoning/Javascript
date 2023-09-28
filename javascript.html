@@ -41,6 +41,7 @@
         <ul class="list-unstyled" id="ul">
          <li id="li"><a href=index.html id="link">Assignment 1</a></li>
          <li id="li"><a href=javascript.html id="link">Assignment 2</a></li>
+         <li id="li"><a href="j.html" id="link">Calculator</a></li>
         </ul>
      </div><br><br><br><br>
 
@@ -53,21 +54,22 @@
             document.getElementById('make').style='background-color:green; color:yellow;'
             document.getElementById('me').style='background-color:black;padding-top: 20px;padding-bottom: 20px;width:100%;position:fixed;'
         }
-     let a = new Date().getDay();
-     let b = ['Sunday', 'Monday', 'Tuesday','Wednesday','Thursday','Friday','Saturday']
-     alert(`Today is ${ b[a]}`)
-     console.log(`Today is ${ b[a]}`)
+        let a = new Date().getDay();
+        let b = ['Sunday', 'Monday', 'Tuesday','Wednesday','Thursday','Friday','Saturday']
+        alert(`Today is ${ b[a]}`)
+        console.log(`Today is ${ b[a]}`)
 
-     const me = {
-        name:'David',
-        age: 19,
-        city:'Ibadan',
-        tribe:'Yoruba',
-        sport:'Basketball',
-        country:'Nigeria'
-     }
-     alert(`My name is ${me.name}. I am ${me.age} years old living in ${me.city}. I am a ${me.tribe} boy. 
-           My favourite sport is ${me.sport}. I am a citizen of ${me.country}.`)
+        const me = {
+            name:'David',
+            age: 19,
+            city:'Ibadan',
+            tribe:'Yoruba',
+            sport:'Basketball',
+            country:'Nigeria'
+        }
+        alert(`My name is ${me.name}. I am ${me.age} years old living in ${me.city}. I am a ${me.tribe} boy. 
+            My favourite sport is ${me.sport}. I am a citizen of ${me.country}.`)
+
     </script>
 </body>
 </html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #ul{
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+        }
+   
+        #li{
+           margin-left: 10px;
+           list-style-type: none;
+        }
+
+       #link{
+           color:yellow 
+       }
+      </style>
+</head>
+<body>
+    <div class="me" style="background-color: rgb(232, 235, 232);padding-top: 20px;padding-bottom: 20px;width:100%;position:fixed;">
+        <ul class="list-unstyled" id="ul">
+         <li id="li"><a href=index.html id="link">Assignment 1</a></li>
+         <li id="li"><a href=javascript.html id="link">Assignment 2</a></li>
+         <li id="li"><a href="j.html" id="link">Calculator</a></li>
+        </ul>
+    </div><br><br><br><br><br><br><br><br>
+
+    <div style="background-color: green; padding-top:40px; height: 500px;width: 500px;text-align: center; color: white;">
+        <input id="firstnumber" placeholder="firstnumber">
+        <span id="plus"></span>
+        <input id="secondnumber" placeholder="secondnumber">
+        <h5 id="equals"></h5>
+        <button onclick="calulator1()">+</button>
+        <button onclick="calulator2()">-</button>
+        <button onclick="calulator3()">/</button>
+        <button onclick="calulator4()">*</button>
+
+    </div>
+
+    <script>
+        function calulator1(){
+            let firstnumber = document.getElementById('firstnumber').value
+            let secondnumber = document.getElementById('secondnumber').value
+            let answer = firstnumber + secondnumber
+            document.getElementById('equals').innerHTML=`=${answer}`
+            document.getElementById('plus').innerHTML='+'
+        }
+
+        function calulator2(){
+            let firstnumber = document.getElementById('firstnumber').value
+            let secondnumber = document.getElementById('secondnumber').value
+            let answer = firstnumber - secondnumber
+            document.getElementById('equals').innerHTML=`= ${answer}`
+            document.getElementById('plus').innerHTML='-'
+        }
+
+        function calulator3(){
+            let firstnumber = document.getElementById('firstnumber').value
+            let secondnumber = document.getElementById('secondnumber').value
+            let answer = firstnumber / secondnumber
+            document.getElementById('equals').innerHTML=`= ${answer}`
+            document.getElementById('plus').innerHTML='/'
+        }
+
+        function calulator4(){
+            let firstnumber = document.getElementById('firstnumber').value
+            let secondnumber = document.getElementById('secondnumber').value
+            let answer = firstnumber * secondnumber
+            document.getElementById('equals').innerHTML=`= ${answer}`
+            document.getElementById('plus').innerHTML='*'
+        }
+
+    </script>
+</body>
+</html>
