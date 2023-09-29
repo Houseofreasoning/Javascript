@@ -31,6 +31,7 @@
     </div><br><br><br><br><br><br><br><br>
 
     <div style="background-color: green; padding-top:40px; height: 500px;width: 500px;text-align: center; color: white;">
+        <h1>Simple Calculator</h1>
         <input id="firstnumber" placeholder="firstnumber">
         <span id="plus"></span>
         <input id="secondnumber" placeholder="secondnumber">
@@ -38,8 +39,29 @@
         <button onclick="calulator1()">+</button>
         <button onclick="calulator2()">-</button>
         <button onclick="calulator3()">/</button>
-        <button onclick="calulator4()">*</button>
-
+        <button onclick="calulator4()">*</button><br><br>
+        
+        <h1>Investment Calculator</h1>
+        <p>Note: Increase rate is 15% per month</p>
+        <input id="amount" pattern="How much do you want to invest?">
+        <select id="duration">
+            <option>Duration</option>
+            <option value="1">1 month</option>
+            <option value="2">2 months</option>
+            <option value="3">3 months</option>
+            <option value="4">4 months</option>
+            <option value="5">5 months</option>
+            <option value="6">6 months</option>
+            <option value="7">7 months</option>
+            <option value="8">8 months</option>
+            <option value="9">9 months</option>
+            <option value="10">10 months</option>
+            <option value="11">11 months</option>
+            <option value="12">12 months</option>
+        </select>
+        <p id="gat"></p>
+    
+        <button id="cal">calculate</button>
     </div>
 
     <script>
@@ -75,6 +97,15 @@
             document.getElementById('plus').innerHTML='*'
         }
 
+        document.getElementById('cal').addEventListener('click', ()=>{
+            let amount = document.getElementById('amount').value;
+            let duration = document.getElementById('duration').value;
+            let monthlyintrestrate = 0.15;
+            let totalreturn = amount * monthlyintrestrate * duration;
+            let futurevalue = totalreturn + Number(amount);
+            document.getElementById('gat').innerHTML=`You will withdraw ${futurevalue} naira 
+            at the end of ${duration} month(s). If you invest ${amount} naira with us.`
+        })    
     </script>
 </body>
 </html>

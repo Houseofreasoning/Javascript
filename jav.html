@@ -44,8 +44,35 @@
     <input id="second"><br>
     <h3 id="an">answer</h3><br>
     <button onclick="got()">Calculate</button>
+    <br><br>
+
+    <h5>Accomodation Type:</h5>
+    <select id="accomodation">
+        <option>Public Accomodation</option>
+        <option value="hotel">Hotel Accomodation</option>
+    </select>
+
+    <div id="roomtype" style="display: none;">
+        Choose
+        <select>
+            <option>Rose double(N9000-N12000)</option>
+            <option>Suite(N15000-N20000)</option>
+        </select>
+    </div>
 
     <script>
+       accomodation.addEventListener('change', ()=>{
+       const a = document.getElementById('accomodation');
+       const b = document.getElementById('roomtype');
+
+       if(a.value==="hotel"){
+        b.style.display='inline-block';
+       }
+       else{
+        b.style.display='none';
+       }
+        });
+       
         
         /*let cities = ['Ibadan']
         alert(typeof cities)
@@ -120,12 +147,12 @@
 
         
 
-        function got(){
-            var input1 = document.getElementById('first').value;
-            var input2 = document.getElementById('second').value;
-            var answer = input1 * input2;
-            document.getElementById('an').innerHTML= answer;
-        }
+        // function got(){
+        //     var input1 = document.getElementById('first').value;
+        //     var input2 = document.getElementById('second').value;
+        //     var answer = input1 * input2;
+        //     document.getElementById('an').innerHTML= answer;
+        // }
 
         //function parameter
         /*function me(x,y){
@@ -190,7 +217,6 @@
         // }
         // alert(fruitprocessor(3,4));
 
- 
         
     </script>
 </body>

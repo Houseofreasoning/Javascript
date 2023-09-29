@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Calculator</title>
+</head>
+<body>
+    <p>Note: Increase rate is 15% per month</p>
+    <input id="amount" pattern="How much do you want to invest?">
+    <select id="duration">
+        <option>Duration</option>
+        <option value="1">1 month</option>
+        <option value="2">2 months</option>
+        <option value="3">3 months</option>
+        <option value="4">4 months</option>
+        <option value="5">5 months</option>
+        <option value="6">6 months</option>
+        <option value="7">7 months</option>
+        <option value="8">8 months</option>
+        <option value="9">9 months</option>
+        <option value="10">10 months</option>
+        <option value="11">11 months</option>
+        <option value="12">12 months</option>
+    </select>
+    <p id="gat"></p>
+
+    <button id="cal">calculate</button>
+
+    <script>
+        document.getElementById('cal').addEventListener('click', ()=>{
+            let amount = document.getElementById('amount').value;
+            let duration = document.getElementById('duration').value;
+            let monthlyintrestrate = 0.15;
+            let totalreturn = amount * monthlyintrestrate * duration;
+            let futurevalue = totalreturn + Number(amount);
+            document.getElementById('gat').innerHTML=`You will withdraw ${futurevalue} naira 
+            at the end of ${duration} month(s). If you invest ${amount} naira with us`
+        })    
+    </script>
+</body>
+</html>
