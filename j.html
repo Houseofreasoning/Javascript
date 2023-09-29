@@ -46,7 +46,7 @@
         function calulator1(){
             let firstnumber = document.getElementById('firstnumber').value
             let secondnumber = document.getElementById('secondnumber').value
-            let answer = firstnumber + secondnumber
+            let answer = Number(firstnumber) + Number(secondnumber)
             document.getElementById('equals').innerHTML=`=${answer}`
             document.getElementById('plus').innerHTML='+'
         }
